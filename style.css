@@ -1,0 +1,72 @@
+.container{
+    
+    padding: 50px;
+    border-radius: 5px;
+    margin: 45px auto;
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+item{
+    color: black;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 3px;
+    flex-basis: 300px;
+
+
+
+}
+body{
+    background: #49494f;
+}
+#logo-container{
+    font-family: Arial;
+    color: aliceblue;
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+
+
+
+}
+a{
+    text-decoration: none;
+
+
+
+
+}
+ul{
+    flex-direction: row;
+    
+
+
+}
+nav{
+    background-color: black;
+
+
+
+}
+.category{
+    flex-direction: column;
+
+
+
+}
+li{
+    text-decoration: none;
+
+
+
+
+
+}
+
+
