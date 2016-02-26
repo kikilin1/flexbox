@@ -1,72 +1,141 @@
-.container{
-    
-    padding: 50px;
-    border-radius: 5px;
-    margin: 45px auto;
+.main-header{
     display: flex;
-    height: 300px;
+    flex-direction: column;
+    background: black;
+}
+
+
+.watches-items{
+    border-radius: 5px;
+    
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-
-
+    align-content: center;
+    
 }
-item{
-    color: black;
-    padding: 15px;
-    margin: 5px;
+.item{
+    color: #f0f0f0;
+    text-align: center;
+   
     border-radius: 3px;
     flex-basis: 300px;
+    align-self: center;
 
 
 
 }
 body{
+    font-family: 'Montserrat', sans-serif;
     background: #49494f;
+    margin: 0;
 }
-#logo-container{
-    font-family: Arial;
-    color: aliceblue;
-    font-size: 40px;
-    margin-bottom: 0;
-    margin-top: 0;
+
     
 
-
-
-}
 a{
     text-decoration: none;
+    color: white;
 
 
 
 
 }
-ul{
-    flex-direction: row;
-    
 
-
-}
 nav{
     background-color: black;
+   
 
 
 
+}
+.main-nav{
+    background: black;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+    
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.main-nav a{
+    display: block;
+    padding: .4em;
+    border-bottom: 1px solid black;
 }
 .category{
-    flex-direction: column;
-
-
-
+    margin: auto;
+    
 }
-li{
-    text-decoration: none;
-
-
-
-
-
+.price{
+    margin: auto;
+   
+    margin-top: 200px;
+   
+    
 }
 
+@media screen and (max-width: 768px) {
+    .category, .price, .sidebar {
+        display:none;
+    }
+}
 
+.container{
+    display:flex;
+    flex-direction: row;
+    
+    overflow: hidden;
+}
+
+.sidebar{
+   flex-basis:20%;
+    font-family: sans-serif;
+    color: white;
+    list-style: none;
+    
+}
+.banner{
+    margin-bottom: 1em;
+    height: auto;
+}
+
+
+
+.site-logo{
+    width: 250px;
+    align-self: center;
+    background: black;
+    
+    
+}
+
+@media screen  and (min-width: 769px){
+    .main-header, .main-nav{
+        flex-direction: row;
+        margin: 0;
+    }
+    .main-nav li{
+        align-self: center;
+        
+        
+    }
+    .site-logo{
+        margin-right: auto;
+    }
+    
+    .watches{
+        flex-basis: 80%;
+    }
+}
+@media (min-width: 1025px){
+    .banner{
+        width: 100%
+    }
+}
+.price, .category{
+    text-align: center;
+}
